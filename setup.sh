@@ -1,4 +1,11 @@
+# curl -X POST https://rft2llt7bwlu6a-3000.proxy.runpod.net/stream \
+#-H "Content-Type: application/json" \
+#-d '{"prompt": "hello"}'
+
+
 #!/bin/bash
+
+# scp -r -P 26488 -i ~/.ssh/tapiastephano0@gmail.com /home/system-1/Documents/ai/tuning_results/checkpoint-550 root@38.147.83.21:/workspace/training
 
 echo "Updating and upgrading system packages..."
 apt update && apt upgrade -y
